@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title >Document</title>
+    <link rel="stylesheet" href="index.html">
+</head>
+
+<body>
+    <div id="app"></div>
+
+
+    <!-- ---------------- Firebase config ----------------- -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyDg5WHfkrJ6Tp7o__eQjiW8FBE95t934LI",
+            authDomain: "spck4-8652f.firebaseapp.com",
+            databaseURL: "https://spck4-8652f-default-rtdb.firebaseio.com",
+            projectId: "spck4-8652f",
+            storageBucket: "spck4-8652f.appspot.com",
+            messagingSenderId: "744006599899",
+            appId: "1:744006599899:web:4bfbc0e96cc9927a7bf8fe",
+            measurementId: "G-S01HK1FEGD"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.getAnalytics(app);
+    </script>
+    <script src="./index.js" type="module"></script>
+
+</body>
+
+</html>

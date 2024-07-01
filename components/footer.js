@@ -15,19 +15,16 @@ class Footer {
         this.location = [
             { address: "Nguyen Huu Tho, Phuoc Kieng, Nha Be, TP.HCM" },
             { address: "School: MindX" },
-            { address: "Pleiku, Gia Lai"}
+            { address: "Pleiku, Gia Lai" }
         ];
         this.contactList = [
-            {name:"Phone : +84-971141645",},
-            {name:"Email : Ldmanh2504@gmail.com"},
-            {name:"Instagram : _lemanh_2596"},
-        ]
+            { name: "Phone : +84-971141645" },
+            { name: "Email : Ldmanh2504@gmail.com" },
+            { name: "Instagram : _lemanh_2596" }
+        ];
     }
 
     createMenu() {
-        // const menuHeader = document.createElement("h3");
-        // menuHeader.textContent="About";
-        // menuSection.appendChild(menuHeader);
         const menuList = document.createElement("ul");
         this.menuItems.forEach((item) => {
             const listItem = document.createElement("li");
@@ -60,20 +57,20 @@ class Footer {
         return locationList;
     }
 
-    createContact(){
+    createContact() {
         const contactList = document.createElement("ul");
         this.contactList.forEach((cont) => {
             const listItem = document.createElement("li");
             listItem.textContent = cont.name;
             contactList.appendChild(listItem);
         });
-        return contactList
+        return contactList;
     }
+
     render() {
         const menuSection = document.createElement("section");
         menuSection.className = "footer-col";
         menuSection.appendChild(this.createMenu());
-        
 
         const accCountSection = document.createElement("section");
         accCountSection.className = "footer-col";
@@ -92,9 +89,7 @@ class Footer {
         footerDiv.appendChild(menuSection);
         footerDiv.appendChild(accCountSection);
         footerDiv.appendChild(locationSection);
-        footerDiv.appendChild(contactSection);  
-
-        document.body.appendChild(footerDiv);
+        footerDiv.appendChild(contactSection);
 
         return footerDiv;
     }

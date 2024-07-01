@@ -3,11 +3,10 @@ class Navbar {
         this.navItems = [
             { name: 'Home', link: '#' },
             { name: 'About', link: '#' },
-            { name: 'Servies', link: '#' },
+            { name: 'Services', link: '#' },
             { name: 'Contact', link: '#' },
         ];
     }
-
 
     render() {
         let navbar = document.createElement('div');
@@ -16,11 +15,11 @@ class Navbar {
         let navList = document.createElement('ul');
         navList.className = 'navbar__nav-list';
 
-        this.navItems.forEach(item => { 
+        this.navItems.forEach(item => {
             let navItems = document.createElement('li');
             navItems.className = 'navbar__nav-items'
             let navLink = document.createElement('a');
-            navLink.href = 'item.link';
+            navLink.href = item.link;
             navLink.innerText = item.name;
             navItems.appendChild(navLink);
             navList.appendChild(navItems);
@@ -29,5 +28,5 @@ class Navbar {
         return navbar;
     }
 };
+
 export default Navbar;
-    

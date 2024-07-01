@@ -1,32 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('img.jpg') no-repeat;
+    background: url('../images/img.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.d-flex input{
+.d-flex input {
     width: 100%;
     height: 60px;
     margin: 20px 0;
     border: none;
     outline: none;
     border: 2px solid rgba(255, 255, 255, .2);
-    border-radius:  40px;
+    border-radius: 40px;
     padding: 20px 45px 20px 20px;
     font-size: 18px;
 }
 
-.d-flex button{
+.d-flex button {
     width: 70%;
     height: 45px;
     background: #fff;
@@ -35,11 +35,11 @@ body{
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 1);
     cursor: pointer;
-    font-size: #333;
+    color: #333;
     font-weight: 600;
 }
 
-.d-flex a{
+.d-flex a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
@@ -52,35 +52,30 @@ body{
     text-decoration: underline;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
     width: 700px;
-    height: 500px;
-    background: transparent;
-    border: 3px solid  #ffccff;
+    /* height: 500px; */
+    background: rgba(0, 0, 0, 0.5);
+    border: 3px solid #ffccff;
     backdrop-filter: blur(20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     color: #fff;
     border-radius: 20px;
     padding: 30px 40px;
-}
-
-.d-flex h2{
-    font-size: 45px;
-    color: black;    
-}
-
-.centering{
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.flex-column{
-    flex-direction: column;
+.d-flex h2.login-title {
+    font-size: 45px;
+    color: white;
+    margin-bottom: 20px;
 }
 
-.error{
+.error {
     color: red;
     font-size: small;
+    display: none;
 }
-
